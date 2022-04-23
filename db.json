@@ -1,0 +1,35 @@
+
+
+{
+	"bike":[
+		{
+			"url":"https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/035/medium/Dio-min_2.png?1519738819",
+			"rate-h":"19/hr"
+		},
+		{
+			"url":"https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/055/medium/Wego-min_2.png?1519739924",
+			"rate-h":"18/hr"
+		},
+		{
+			"url":"https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/056/medium/WhatsApp_Image_2021-06-24_at_1.20.48_PM.jpeg?1624521096",
+			"rate-h":"16/hr"
+		},
+		{
+			"url":"https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/056/medium/WhatsApp_Image_2021-06-24_at_1.20.48_PM.jpeg?1624521096",
+			"rate-h":"18/hr"
+		},
+		{
+			"url":"https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/233/medium/Honda_activa_5G.png?1532687566",
+			"rate-h":"19/hr"
+		},
+		{
+			"url":"https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/248/medium/fz_%281%29.jpg?1630564693",
+			"rate-h":"30/hr"
+		},
+		{
+			"url":"https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/248/medium/fz_%281%29.jpg?1630564693",
+			"rate-h":"30/hr"
+		}
+
+	]
+}

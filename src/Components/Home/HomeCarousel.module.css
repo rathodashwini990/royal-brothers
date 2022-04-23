@@ -1,0 +1,12 @@
+.Carousel__solo {
+  width: 100%;
+}
+
+.Carousel__dots {
+  color: black;
+  background-color: red;
+}
+
+.Carousel__solo img {
+  width: 100%;
+}

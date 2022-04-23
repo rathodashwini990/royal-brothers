@@ -1,0 +1,49 @@
+
+
+.home-img{
+	width:100%;
+}
+
+.home-sani{
+	display:flex;
+	justify-content:center;
+	margin:20px;
+	font-size:18px;
+}
+.home-sani-ch{
+	margin-left: 30px;
+}
+.home-sani-h{
+	margin: 0px;
+
+}
+.home-sani-line{
+	width:60px;
+	height:5px;
+	background-color:rgb(253, 253, 5);
+	margin:auto;
+}
+.home-sani-div{
+	margin-bottom: 40px;
+}
+
+.home-sani-drop{
+	float: right;
+	margin-bottom:40px;
+	margin-right:80px;
+}
+.home-sani-drop-span{
+	font-size: 20px;
+	margin-right: 20px;
+}
+
+.home-sani-drop-sel{
+	font-size:16px;
+	width:100px;
+	padding:5px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.clear{
+	clear:both;
+}
