@@ -1,6 +1,7 @@
 import "./Home.css";
 
 import {useState, useEffect} from "react";
+import DateTimePicker from "./DateTimePicker";
 
 export const Home = () => {
 
@@ -11,7 +12,7 @@ export const Home = () => {
 	},[]);
 
     async function getItem (){
-		let res = await fetch("http://localhost:4000/bike");
+		let res = await fetch("http://localhost:3000/bike");
 		let data = await res.json();
 		let s_data = [];
 		s_data.push(data[0]);
@@ -20,9 +21,9 @@ export const Home = () => {
 		setItem(s_data);
 	}
 
-
   return (
     <>
+      <DateTimePicker />
       <img
         className="home-img"
         src="https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page_web-986bff386c60dfaf5106b17c40f7c04228518a95dff9b04ccd88c81465cec0be.jpg"
@@ -32,7 +33,7 @@ export const Home = () => {
         <div className="home-sani-ch">Sanitized Vehicles</div>
         <div className="home-sani-ch">Vehicle Insurance</div>
         <div className="home-sani-ch">24/7 Roadside Assistance</div>
-        <div className="home-sani-ch">24/7 Roadside Assistance</div>
+        <div className="home-sani-ch">Bike Maintenance</div>
       </div>
       <div className="home-sani-div">
         <h1 className="home-sani-h">OUR FLEET</h1>
@@ -40,7 +41,7 @@ export const Home = () => {
       </div>
 
       <div className="home-sani-drop" >
-        <span className="home-sani-drop-span" >Duration</span>
+        <span className="home-sani-drop-span">Duration</span>
         <select className="home-sani-drop-sel" name="duration" >
           <option value="hourly">hourly</option>
           <option value="7 days">7 days</option>
@@ -57,6 +58,10 @@ export const Home = () => {
 		  </div>
 	  ))}
 
+      <div className="home-sani-div">
+        <h1 className="home-sani-h">WE BELIEVE IN QUALITY</h1>
+        <div className="home-sani-line"></div>
+      </div>
     </>
   );
 };
