@@ -72,12 +72,14 @@ import Login from './Login'
 import Signup from './Signup' 
 
 const SignInOutContainer=()=>{
-const [value,setValue]=useState(0)
+const [value,setValue]=useState(0);
+
 const handleChange = (event, newValue) => {
     setValue(newValue);
   };
 
   const paperStyle={width:340,margin:"20px auto"}
+  
   function TabPanel(props) {
     const { children, value, index, ...other } = props;
   
