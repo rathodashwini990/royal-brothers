@@ -7,6 +7,8 @@ import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
 
+import { useNavigate } from 'react-router-dom';
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -43,6 +45,8 @@ const useStyles = makeStyles((theme) => ({
 export default function Navbar() {
   const classes = useStyles();
 
+  let navigate = useNavigate();
+
   return (
     <div className={classes.root}>
       <AppBar position="fixed" className={classes.app}>
@@ -51,7 +55,15 @@ export default function Navbar() {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title}>
-            <img src="https://www.kindpng.com/picc/m/600-6000026_royal-brothers-logo-hd-png-download.png" alt="logo" className={classes.logo} />
+            <img src="https://www.kindpng.com/picc/m/600-6000026_royal-brothers-logo-hd-png-download.png" 
+              alt="logo" 
+              className={classes.logo} 
+
+              onClick={() => {
+                navigate("/");
+              }} 
+              
+            />
           </Typography>
           <Typography className={classes.title}>
             Tariff
@@ -66,8 +78,20 @@ export default function Navbar() {
             Partener with us
           </Typography>
           <Button className={classes.btn1}>Location</Button>
-          <Button className={classes.btn}>Login</Button>
-          <Button className={classes.btn}>Signup</Button>
+
+          <Button  
+              onClick={() => {
+              navigate("/login");
+            }} 
+              className={classes.btn}>Login
+          </Button>
+
+          <Button  
+              onClick={() => {
+              navigate("/login");
+            }} 
+              className={classes.btn}>Signup
+          </Button>
         </Toolbar>
       </AppBar>
     </div>

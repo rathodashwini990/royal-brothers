@@ -1,9 +1,11 @@
 .Footer {
+  border: 1px solid #dbdbdb;
   background-color: #373737;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   text-align: left;
+  width: 100%;
 }
 
 .Footer h4 {
@@ -13,6 +15,7 @@
 }
 
 .Footer > div {
+  /* border: 1px solid #dbdbdb; */
   width: 100%;
   max-width: 300px;
   color: #dbdbdb;
@@ -39,24 +42,30 @@
   margin: 5px 0 15px;
 }
 .Footer__desc {
-  width: 100%;
+  /* border: 1px solid #dbdbdb; */
+  width: 93%;
   padding: 50px;
   background-color: #444444;
   text-align: left;
 }
 
 .Footer__desc h2 {
+  /* border: 1px solid #dbdbdb; */
+  width: 60%;
   line-height: 30px;
   color: white;
   font-size: 28px;
 }
 
 .Footer__desc p {
+  /* border: 1px solid #dbdbdb; */
+  width: 100%;
   color: #dbdbdb;
   font-size: 17px;
 }
 
 .Footer__end {
+  /* border: 1px solid #dbdbdb; */
   background-color: #373737;
   display: flex;
   align-items: center;

@@ -5,7 +5,12 @@ import './DateTimePicker.css';
 import { TextField } from '@material-ui/core';
 import Button from '@mui/material/Button';
 
+import { useNavigate } from 'react-router-dom';
+
 function DateTimePicker() {
+
+  //navigation
+  let navigate = useNavigate();
 
   const [selectedDate, setSelectedDate] = useState('2017-05-24');
 
@@ -57,7 +62,12 @@ function DateTimePicker() {
         </form>
         <br />
         <br />
-            <Button variant="contained">Search</Button>
+            <Button variant="contained"
+                onClick={() => {
+                    navigate("/search");
+                  }} 
+            >Search
+            </Button>
         </div>
     </div >
   );
