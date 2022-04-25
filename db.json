@@ -1,35 +1,311 @@
-
-
 {
-	"bike":[
-		{
-			"url":"https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/035/medium/Dio-min_2.png?1519738819",
-			"rate-h":"19/hr"
-		},
-		{
-			"url":"https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/055/medium/Wego-min_2.png?1519739924",
-			"rate-h":"18/hr"
-		},
-		{
-			"url":"https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/056/medium/WhatsApp_Image_2021-06-24_at_1.20.48_PM.jpeg?1624521096",
-			"rate-h":"16/hr"
-		},
-		{
-			"url":"https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/056/medium/WhatsApp_Image_2021-06-24_at_1.20.48_PM.jpeg?1624521096",
-			"rate-h":"18/hr"
-		},
-		{
-			"url":"https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/233/medium/Honda_activa_5G.png?1532687566",
-			"rate-h":"19/hr"
-		},
-		{
-			"url":"https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/248/medium/fz_%281%29.jpg?1630564693",
-			"rate-h":"30/hr"
-		},
-		{
-			"url":"https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/248/medium/fz_%281%29.jpg?1630564693",
-			"rate-h":"30/hr"
-		}
-
+	"tariff": [
+	  {
+		"id": 1,
+		"name": "Aprilia SR 150 (ABS)",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/030/medium/Aprilia-SR-150__...png?1504092295",
+		"booktime": "22",
+		"kmlimit": "5",
+		"exkm": "4",
+		"price": "7000"
+	  },
+	  {
+		"id": 2,
+		"name": "Honda Dio",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/035/medium/Dio-min_2.png?1519738819",
+		"booktime": "19",
+		"kmlimit": "5",
+		"exkm": "4",
+		"price": "9000"
+	  },
+	  {
+		"id": 3,
+		"name": "Honda Activa 4G",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/121/medium/Activa_48-min_2.png?1592300804",
+		"booktime": "18",
+		"kmlimit": "5",
+		"exkm": "4",
+		"price": "5000"
+	  },
+	  {
+		"id": 4,
+		"name": "Honda Activa 5G",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/233/medium/Honda_activa_5G.png?1532687566",
+		"booktime": "19",
+		"kmlimit": "5",
+		"exkm": "4",
+		"price": "1000"
+	  },
+	  {
+		"id": 5,
+		"name": "TVS Ntorq 125",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/257/medium/ntorq2.png?1571407789",
+		"booktime": "21",
+		"kmlimit": "5",
+		"exkm": "4",
+		"price": "3000"
+	  },
+	  {
+		"id": 6,
+		"name": "Bajaj Pulsar 150",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/016/medium/Bajaj_Pulsar-min_2.png?1519738545",
+		"booktime": "25",
+		"kmlimit": "10",
+		"exkm": "5",
+		"price": "8000"
+	  },
+	  {
+		"id": 7,
+		"name": "Yamaha FZ",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/020/medium/FZ_Version_1.png?1504100292",
+		"booktime": "22",
+		"kmlimit": "10",
+		"exkm": "5",
+		"price": "4000"
+	  },
+	  {
+		"id": 8,
+		"name": "Hero Glamour",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/265/medium/Glamour_125.png?1571327418",
+		"booktime": "25",
+		"kmlimit": "10",
+		"exkm": "5",
+		"price": "5000"
+	  },
+	  {
+		"id": 9,
+		"name": "Royal Enfield Classic 350",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/007/medium/Classic_350-1-min_2.png?1519738687",
+		"booktime": "47",
+		"kmlimit": "12",
+		"exkm": "5.5",
+		"price": "7000"
+	  },
+	  {
+		"id": 10,
+		"name": "Royal Enfield Himalayan",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/014/medium/Himalayan_RE-min_2.png?1519739226",
+		"booktime": "54",
+		"kmlimit": "12",
+		"exkm": "6",
+		"price": "2000"
+	  },
+	  {
+		"id": 11,
+		"name": "KTM Duke 200 (ABS)",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/bike_models/images/000/000/246/medium/Duke_200_ABS.png?1559098797",
+		"booktime": "49",
+		"kmlimit": "10",
+		"exkm": "6",
+		"price": "1000"
+	  }
+	],
+	"user": [
+	  {
+		"id": 1,
+		"phone": "8009008284",
+		"pass": "frank",
+		"name": "mitesh"
+	  },
+	  {
+		"name": "asdasd",
+		"email": "ms00110011@gmail.com",
+		"password": "secret",
+		"phone": "8009008284",
+		"id": 2
+	  },
+	  {
+		"name": "asdasd",
+		"email": "ms00110011@gmail.com",
+		"password": "secret",
+		"phone": "8009008284",
+		"id": 3
+	  },
+	  {
+		"name": "Sam",
+		"email": "saas",
+		"password": "mi",
+		"phone": "123456",
+		"id": 4
+	  },
+	  {
+		"name": "Mitesh",
+		"email": "ms00110011@gmail.com",
+		"password": "frank",
+		"phone": "8009008284",
+		"id": 5
+	  },
+	  {
+		"name": "",
+		"email": "",
+		"password": "",
+		"phone": "",
+		"id": 6
+	  }
+	],
+	"time": [
+	  {
+		"pickupDate": "2022-04-29",
+		"pickupTime": "04:38",
+		"dropDate": "2022-04-22",
+		"dropTime": "02:42",
+		"id": 1
+	  },
+	  {
+		"pickupDate": "2022-04-09",
+		"pickupTime": "05:01",
+		"dropDate": "2022-04-10",
+		"dropTime": "04:05",
+		"id": 2
+	  },
+	  {
+		"pickupDate": "2022-04-11",
+		"pickupTime": "07:00",
+		"dropDate": "2022-04-13",
+		"dropTime": "07:00",
+		"id": 3
+	  },
+	  {
+		"pickupDate": "2022-04-10",
+		"pickupTime": "09:01",
+		"dropDate": "2022-04-21",
+		"dropTime": "09:59",
+		"id": 4
+	  },
+	  {
+		"pickupDate": "",
+		"pickupTime": "",
+		"dropDate": "",
+		"dropTime": "",
+		"id": 5
+	  },
+	  {
+		"pickupDate": "2022-04-15",
+		"pickupTime": "",
+		"dropDate": "",
+		"dropTime": "",
+		"id": 6
+	  },
+	  {
+		"pickupDate": "2022-03-31",
+		"pickupTime": "15:04",
+		"dropDate": "2022-04-14",
+		"dropTime": "15:04",
+		"id": 7
+	  },
+	  {
+		"pickupDate": "",
+		"pickupTime": "",
+		"dropDate": "",
+		"dropTime": "",
+		"id": 8
+	  },
+	  {
+		"pickupDate": "2022-04-14",
+		"pickupTime": "12:48",
+		"dropDate": "2022-04-15",
+		"dropTime": "13:46",
+		"id": 6
+	  }
+	],
+	"blogs": [
+	  {
+		"id": 1,
+		"text1": "Travel",
+		"text2": "Karnataka - Explore The Paradise of Plantations",
+		"text3": "Must-Visit Destinations in Karnataka for Nature Lovers  ",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/articles/article_images/000/000/023/med/Paradise-of-Plantations-in-Karnataka.jpg"
+	  },
+	  {
+		"id": 2,
+		"text1": "Travel",
+		"text2": "Jaipur: The “Not Just Pink” City of India - Sightseeing Places to Visit, Top Attractions & Things to Do",
+		"text3": "Here is the ultimate travel guide for places to visit, and things to do in Jaipur.",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/articles/article_images/000/000/022/med/Bike-Trip-Exploring-Jaipur-City-Palace.png"
+	  },
+	  {
+		"id": 3,
+		"text1": "Travel",
+		"text2": "Bike Trips from Bangalore – Travel Endlessly",
+		"text3": "Bangalore offers a plethora of beautiful places to explore, both in and around the city. For those looking for a breath of fresh air and an exciting experience, there is no better option than a bik...",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/articles/article_images/000/000/021/med/Bike-Trip.jpg"
+	  },
+	  {
+		"id": 4,
+		"text1": "Travel",
+		"text2": "Travel Guide: 5 Popular Road Trip Routes in Kerala",
+		"text3": "Here's a list of top 5 road trip routes in Kerala you can traverse if you want to escape a monotonous routine.",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/articles/article_images/000/000/020/med/Kerala-Road-Trip.png"
+	  },
+	  {
+		"id": 5,
+		"text1": "Bike",
+		"text2": "Explained - Things You Should Know About BS6 Engine Technology ",
+		"text3": "What is BS6 and the impact it makes on the environment, riders and bike rentals. We’re making a case for why the shared economy is the next big industry for millennials.",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/articles/article_images/000/000/019/med/Royal-Enfield-Himalayan.jpg"
+	  },
+	  {
+		"id": 6,
+		"text1": "Travel",
+		"text2": "Best One Day Trips Near Bangalore",
+		"text3": "We've created the ultimate list of exotic destinations that work out as one day trips from Bangalore. Rent an RB bike and let's explore!",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/articles/article_images/000/000/018/med/Coorg_Waterfall.jpg"
+	  },
+	  {
+		"id": 7,
+		"text1": "Travel",
+		"text2": "Bangalore to Mysore - Ways to Travel, Tourist Spots & Tips for the Best Experience",
+		"text3": " When heading out of Bangalore towards Mysore, the NHs are replete with pit stops that are little anecdotes to the historic culture of Karnataka - like the fluffy thatte idli and hot filter coffee.",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/articles/article_images/000/000/017/med/Mysore_Palace.jpg"
+	  },
+	  {
+		"id": 8,
+		"text1": "Travel",
+		"text2": "Top 20 Majestic Places To Visit In South India",
+		"text3": "Experience the best of South India by road with pit stops at scenic locales such as Coorg, Oooty, Munnar, Konark, Pondicherry, Vizag and more!",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/articles/article_images/000/000/015/med/South_India_Header_Image.png"
+	  },
+	  {
+		"id": 9,
+		"text1": "Bike",
+		"text2": "8 Reasons why you'll love traveling alone",
+		"text3": "The next big trend in travel has to be #solotravel. Get ready to start booking 'for one' the next time you head out. We're giving you tips on how to travel solo like a boss.",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/articles/article_images/000/000/014/med/solo_travel_bike_biker.jpg"
+	  },
+	  {
+		"id": 10,
+		"text1": "Travel",
+		"text2": "Why Riding In The Rain Is The Best Feeling Ever",
+		"text3": "Although, riding in the rain can be a lot of fun, it is extremely dangerous if one is not careful. Paying heed to some of these road safety tips can take you a long way! ",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/articles/article_images/000/000/012/med/cover291.jpg"
+	  },
+	  {
+		"id": 11,
+		"text1": "Travel",
+		"text2": "Coorg - Culture & Tradition",
+		"text3": "Coorg or Kodagu- is known for its serenity, and nature’s bounty. A land which has a blissful presence in lives of the inhabitants as well as the visitors exploring this beautiful region. A South-we...",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/articles/article_images/000/000/010/med/coorg.jpg"
+	  },
+	  {
+		"id": 12,
+		"text1": "Travel",
+		"text2": "Tips For Renting A Motorcycle In Bangalore",
+		"text3": "This article sheds light on the places around Bangalore that can be explored with a rented two-wheeler and the tips that would help one avail bike rental in Bangalore.",
+		"img": "https://d3vp2rl7047vsp.cloudfront.net/articles/article_images/000/000/009/med/bangalore1-reuters-traffic-moves-along-a-road-in-the-southern-indian-city-of-bangalore-december-14-2005.jpg"
+	  },
+	  {
+		"id": 13,
+		"text1": "Travel",
+		"text2": "",
+		"text3": "",
+		"img": ""
+	  },
+	  {
+		"id": 14,
+		"text1": "Travel",
+		"text2": "",
+		"text3": "",
+		"img": ""
+	  }
 	]
-}
+  }

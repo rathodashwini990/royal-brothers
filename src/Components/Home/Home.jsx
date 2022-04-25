@@ -12,7 +12,7 @@ export const Home = () => {
 	},[]);
 
     async function getItem (){
-		let res = await fetch("http://localhost:3000/bike");
+		let res = await fetch("http://localhost:8000/bike");
 		let data = await res.json();
 		let s_data = [];
 		s_data.push(data[0]);
