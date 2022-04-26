@@ -102,13 +102,14 @@
 	],
 	"user": [
 	  {
-		"id": 1,
-		"phone": "8009008284",
-		"pass": "frank",
-		"name": "mitesh"
+		"name": "ashwini",
+		"email": "ashwini@gmail.com",
+		"password": "ashwini",
+		"phone": "7875213437",
+		"id": 1
 	  },
 	  {
-		"name": "asdasd",
+		"name": "ewrteeh",
 		"email": "ms00110011@gmail.com",
 		"password": "secret",
 		"phone": "8009008284",
@@ -122,14 +123,14 @@
 		"id": 3
 	  },
 	  {
-		"name": "Sam",
+		"name": "Amol",
 		"email": "saas",
 		"password": "mi",
 		"phone": "123456",
 		"id": 4
 	  },
 	  {
-		"name": "Mitesh",
+		"name": "Arati",
 		"email": "ms00110011@gmail.com",
 		"password": "frank",
 		"phone": "8009008284",

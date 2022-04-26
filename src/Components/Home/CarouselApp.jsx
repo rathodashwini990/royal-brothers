@@ -2,18 +2,6 @@ import Carousel, { CarouselItem } from "./Carousel";
 import React from "react";
 import styles from "./HomeCarousel.module.css";
 
-// function CarouselApp() {
-//     return (
-//         <div className="App">
-//             <Carousel>
-//                 <CarouselItem>Item 1</CarouselItem>
-//                 <CarouselItem>Item 2</CarouselItem>
-//                 <CarouselItem>Item 3</CarouselItem>
-//             </Carousel>
-//         </div>
-//     )
-// }
-
 function CarouselApp() {
   return (
     <Carousel autoplay className="App" >
