@@ -6,9 +6,9 @@ import Navbar from '../Navbar/Navbar'
 const ProductPage = () => {
   return (
     <div>
-        <Navbar />
+        {/* <Navbar /> */}
         <Product />
-        <Footer />
+        {/* <Footer /> */}
     </div>
   )
 }
