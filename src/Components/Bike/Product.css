@@ -1,0 +1,11 @@
+.images{
+    width: 220px;
+    /* height:200px */
+    margin: 20px;
+}
+.contaniner{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+
+}
