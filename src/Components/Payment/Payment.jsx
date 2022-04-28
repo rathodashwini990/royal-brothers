@@ -5,14 +5,24 @@ import {
   CardContent, 
   Typography } from '@material-ui/core';
 import Button from '@mui/material/Button';
+import Cards from 'react-credit-cards';
+import 'react-credit-cards/es/styles-compiled.css';
 
-import React,{ useEffect } from 'react';
+import React,{ useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import {addCart} from "../../Redux/action";
 import { useNavigate } from 'react-router-dom';
+
 import "./Payment.css";
 
 const Payment = () => {
+
+    // Card States
+    const [number, setNumber] = useState("");
+    const [name, setName] = useState("");
+    const [expiry, setExpiry] = useState("");
+    const [cvc, setCvc] = useState("");
+    const [focus, setFocus] = useState("");
 
     const dispatch = useDispatch();
     let navigate = useNavigate();
@@ -30,68 +40,139 @@ const Payment = () => {
                
               <Card variant='outlined' sx={{ minWidth: 275 }} 
                 style={{
-                  width: 800,
+                  width: 900,
                   height: 480, 
                   marginLeft: 100, 
                   marginTop: 100,
               }}>
                 <Card variant='outlined' sx={{ minWidth: 275 }} 
                   style={{
-                    width: 800,
-                    height: 20, 
+                    width: 900,
+                    height: 30, 
                     marginLeft: 0, 
                     marginTop: 10,
                 }}>
-                <CardActionArea>
-                <CardContent style={{width: 250,marginLeft: 7}}>
                   <Typography variant='h6' color="text.secondary" gutterBottom
                     style={{marginLeft: -80, marginTop: 0}}
                   >
                       CHOOSE PAYMENT METHOD
                     </Typography> 
-                  <br /><br /><br /><br />
-                  <img 
-                    style={{paddingTop: '10%'}} src={temp} alt="" 
-                  />
-                </CardContent>
-                </CardActionArea> 
                 </Card>
 
                 <Card variant='outlined' sx={{ minWidth: 275 }} 
                   style={{
-                    width: 800,
-                    height: 480, 
-                    marginLeft: 100, 
-                    marginTop: 100,
-                    display: "flex"
+                    // border: "1px solid black",
+                    width: 900,
+                    height: 400, 
+                    marginLeft: 0, 
+                    marginTop: 10,
+                    display: "flex",
+                    
                 }}>
                   
-                <Card  sx={{ minWidth: 275 }} style={{width: 300, marginLeft: 0, marginTop: 10}}>
-                  <CardActionArea>
-                
-                  <CardContent style={{width: 250,marginLeft: 7}}>
-                  <Typography variant='h5' color="text.secondary" gutterBottom
-                    style={{marginLeft: -80, marginTop: 0}}
-                  >
-                      CHOOSE PAYMENT METHOD
+                <Card sx={{ minWidth: 275 }} style={{width: 250, height: 250, marginLeft: 0, marginTop: 10}}>
+                    <CardActionArea>
+                    <CardContent style={{width: 200 ,marginLeft: 7}}>
+                    <Typography variant='h6' color="text.secondary" gutterBottom
+                      style={{marginLeft: -30, marginTop: 0 ,border: "1px solid whitesmoke"}}
+                    >
+                      Credit Card
                     </Typography> 
-                    <br /><br /><br /><br />
-                    <img 
-                      style={{paddingTop: '10%'}} src={temp} alt="" 
-                    />
-                  </CardContent>
+                    <Typography variant='h6' color="text.secondary" gutterBottom
+                      style={{marginLeft: -30, marginTop: 0 ,border: "1px solid whitesmoke"}}
+                    >
+                        Debit Card
+                    </Typography>
 
-                  </CardActionArea> 
+                    <Typography variant='h6' color="text.secondary" gutterBottom
+                      style={{marginLeft: -30, marginTop: 0 ,border: "1px solid whitesmoke"}}
+                    >
+                        Net Banking
+                    </Typography>
+                    <Typography variant='h6' color="text.secondary" gutterBottom
+                      style={{marginLeft: -30, marginTop: 0 ,border: "1px solid whitesmoke"}}
+                    >
+                        UPI Payment
+                      </Typography>
+                    <img />
+                    <img />
+                    </CardContent>
+                    </CardActionArea> 
                 </Card>
 
+                {/* Credit Card Start */}
+                <Card variant='outlined' style={{width: "80%", height: 380, marginTop: 10}}>
+                  <div className='input'>
+                  <Cards 
+                    number={number}
+                    name={name}
+                    xpiry={expiry}
+                    cvc={cvc}
+                    focused={focus}
+                  />
+                    <form>
+                    <br /> <label>Card Number: </label>
+                      <input 
+                        type='tel'
+                        name='number'
+                        placeholder='Card Number'
+                        value={number}
+                        onChange={e => setNumber(e.target.value)}
+                        onFocus={e => setFocus(e.target.name)}
+                      />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <label>Name: </label> 
+                      <input 
+                        type='text'
+                        name='name'
+                        placeholder='Name'
+                        value={name}
+                        onChange={e => setName(e.target.value)}
+                        onFocus={e => setFocus(e.target.name)}
+                      />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br />
+                      <label>Expiry Date: </label>
+                      <input 
+                        type='text'
+                        name='expiry'
+                        placeholder='MM/YY Expiry'
+                        value={expiry}
+                        onChange={e => setExpiry(e.target.value)}
+                        onFocus={e => setFocus(e.target.name)}
+                      />
+                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      <label>CVC: </label>
+                      <input 
+                        type='tel'
+                        name='cvc'
+                        placeholder='CVC'
+                        value={cvc}
+                        onChange={e => setCvc(e.target.value)}
+                        onFocus={e => setFocus(e.target.name)}
+                      /> <br /><br /><br />
+                    </form>
+                    </div>
+                    <CardActions>
+                    <Button size="medium" variant="contained"
+                      style={{marginLeft: 250}}
+                      onClick={() => 
+                        {
+                          dispatch(addCart(e)); navigate("/success")
+                        }
+                      }
+                    >Make Payment
+                    </Button>
+                  </CardActions>
                 </Card>
+                {/* Credit Card End */}
 
+                </Card>
+              </Card> 
 
-              
-                <Card variant='outlined' sx={{ minWidth: 275 }} 
+              <Card variant='outlined' sx={{ minWidth: 275 }} 
                   style={{
-                    width: 350, 
-                    height: 200,
+                    width: 350,
+                    height: 150,
                     marginLeft: 20, 
                     marginTop: 100,
                     display: "flex",
@@ -112,21 +193,9 @@ const Payment = () => {
                       Total Payable Amount - {e.price}
                     </Typography>
                   </CardContent>
-                  <CardActions>
-                    <Button size="medium" variant="contained"
-                      style={{marginLeft: 100}}
-                      onClick={() => 
-                        {
-                          dispatch(addCart(e)); navigate("/success")
-                        }
-                      }
-                    >Make Payment
-                    </Button>
-                  </CardActions>
                   </CardActionArea>
                   </Card>
-                </Card>
-              </Card> 
+              </Card>
               </>
             );
         })}
@@ -135,92 +204,3 @@ const Payment = () => {
 }
 
 export default Payment
-
-{/* <Card variant='outlined' sx={{ minWidth: 275 }} 
-                style={{
-                  width: 800,
-                  height: 480, 
-                  marginLeft: 100, 
-                  marginTop: 100,
-                  display: "flex",
-                  // flex-wrap: "wrap",
-              }}>
-                <Card  sx={{ minWidth: 275 }} style={{width: 300, marginLeft: 0, marginTop: 10}}>
-                
-                <CardActionArea>
-               
-                <CardContent style={{width: 250,marginLeft: 7}}>
-                <Typography variant='h6' color="text.secondary" gutterBottom
-                  style={{marginLeft: -80, marginTop: 0}}
-                >
-                    CHOOSE PAYMENT METHOD
-                  </Typography> 
-                  <br /><br /><br /><br />
-                  <img 
-                    style={{paddingTop: '10%'}} src={temp} alt="" 
-                  />
-                </CardContent>
-
-                </CardActionArea> 
-                </Card>
-
-                <Card  sx={{ minWidth: 275 }} style={{width: 300, marginLeft: 0, marginTop: 10}}>
-                <CardActionArea>
-               
-                <CardContent style={{width: 250,marginLeft: 7}}>
-                <Typography variant='h5' color="text.secondary" gutterBottom
-                  style={{marginLeft: -80, marginTop: 0}}
-                >
-                    CHOOSE PAYMENT METHOD
-                  </Typography> 
-                  <br /><br /><br /><br />
-                  <img 
-                    style={{paddingTop: '10%'}} src={temp} alt="" 
-                  />
-                </CardContent>
-
-                </CardActionArea> 
-                </Card>
-                
-              </Card>
-
-              
-              <Card variant='outlined' sx={{ minWidth: 275 }} 
-                style={{
-                  width: 350, 
-                  height: 200,
-                  marginLeft: 20, 
-                  marginTop: 100,
-                  display: "flex",
-                  // flex-wrap: "wrap",
-              }}>
-
-                <Card  sx={{ minWidth: 275 }} style={{width: 350, marginLeft: 0, marginTop: 10}}>
-                {/* <Grid item key={e.id}> */}
-              //   <CardActionArea>
-              //   <CardContent style={{width: 400,marginLeft: 7, marginTop: 0}}>
-              //     <Typography variant='h5' color="text.secondary" gutterBottom
-              //       style={{marginLeft: -80, marginTop: 0}}
-              //     >
-              //       SUMMARY
-              //     </Typography> 
-              //     <Typography variant='h6' color="text.secondary" gutterBottom
-              //       style={{marginLeft: -80, marginTop: 0}}
-              //     >
-              //       Total Payable Amount - {e.price}
-              //     </Typography>
-              //   </CardContent>
-              //   <CardActions>
-              //     <Button size="medium" variant="contained"
-              //       style={{marginLeft: 100}}
-              //       onClick={() => 
-              //         {
-              //           dispatch(addCart(e)); navigate("/success")
-              //         }
-              //       }
-              //     >Make Payment
-              //     </Button>
-              //   </CardActions>
-              //   </CardActionArea>
-              //   </Card>
-              // </Card>  */}
