@@ -143,7 +143,7 @@ const BikeDetails = () => {
                   // flex-wrap: "wrap",
               }}>
 
-                <Card  sx={{ minWidth: 275 }} style={{width: 300, marginLeft: 0, marginTop: 10}}>
+                <Card  sx={{ minWidth: 275 }} style={{width: 350, marginLeft: 0, marginTop: 10}}>
                 {/* <Grid item key={e.id}> */}
                 <CardActionArea>
                 <CardContent style={{width: 400,marginLeft: 7, marginTop: 0}}>
