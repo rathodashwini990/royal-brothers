@@ -6,7 +6,13 @@ const SuccessPage = () => {
   return (
     <div>
         <Navbar />
-        <h1 style={{marginTop: 100}}>Payment Page</h1>
+        <div id="wrapper" style={{ marginTop: "130px" }}>
+            <h2>Payment Successfully Completed</h2>
+            <img src="https://cdn.dribbble.com/users/2185205/screenshots/7886140/02-lottie-tick-01-instant-2.gif"
+             alt=''/>
+            <div id="info">
+            </div>
+        </div >
         <Footer />
     </div>
     

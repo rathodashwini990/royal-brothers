@@ -119,8 +119,17 @@ const BikeDetails = () => {
                   </Typography>
                 </CardContent>
                 <CardActions>
+                  <input placeholder='Coupon Code'
+                     style={{
+                       marginLeft: 120,
+                       borderTop: "1px solid white",
+                       borderLeft: "1px solid white",
+                       borderRight: "1px solid white",
+                       borderBottom: "1px solid grey"
+                    }}
+                  />
                   <Button size="medium" variant="contained"
-                    style={{marginLeft: 200}}
+                    style={{marginLeft: 20}}
                     onClick={() => 
                       {
                         dispatch(addCart(e)); navigate("/checkout")
@@ -136,7 +145,7 @@ const BikeDetails = () => {
               <Card variant='outlined' sx={{ minWidth: 275 }} 
                 style={{
                   width: 350, 
-                  height: 280,
+                  height: 160,
                   marginLeft: 20, 
                   marginTop: 100,
                   display: "flex",

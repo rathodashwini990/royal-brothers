@@ -7,7 +7,6 @@ const PaymentPage = () => {
   return (
     <div>
         <Navbar />
-        {/* <h1 style={{marginTop: 100}}>Payment Page</h1> */}
         <Payment />
         <Footer />
     </div>
