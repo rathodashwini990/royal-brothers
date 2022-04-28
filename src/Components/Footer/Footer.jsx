@@ -3,7 +3,7 @@ import styles from "./Footer.module.css";
 
 function Footer() {
   return (
-    <>
+    <><br /><br />
       <div className={styles.Footer}>
         <div>
           <h4>Royal Brothers</h4>
