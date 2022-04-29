@@ -69,11 +69,12 @@ const Login = ({ handleChange }) => {
                                 }} 
 
                             </Button> */}
-                            <Button type='submit' color='primary' variant="contained"
+                            <Button type='submit' color='primary' variant="contained" disabled={props.isSubmitting}
+                                style={btnstyle} fullWidth
                                 onClick={() => {
                                     navigate("/");
                                 }} 
-                            >   SIGNIN
+                            >   {props.isSubmitting ? "Loading" : "Sign in"}
                             </Button>
                         </Form>
                     )}
