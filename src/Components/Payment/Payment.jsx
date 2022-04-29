@@ -34,8 +34,8 @@ const Payment = () => {
     <div className="contaniner">
         {
         amountCart.map((e) => {
-            let temp = e.img;
-            console.log(e);
+            // let temp = e.img;
+            // console.log(e);
             return ( <>
                
               <Card variant='outlined' sx={{ minWidth: 275 }} 
@@ -94,8 +94,7 @@ const Payment = () => {
                     >
                         UPI Payment
                       </Typography>
-                    <img />
-                    <img />
+                    
                     </CardContent>
                     </CardActionArea> 
                 </Card>
@@ -143,7 +142,7 @@ const Payment = () => {
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       <label>CVC: </label>
                       <input 
-                        type='tel'
+                        type='password'
                         name='cvc'
                         placeholder='CVC'
                         value={cvc}
