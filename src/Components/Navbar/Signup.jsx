@@ -8,7 +8,12 @@ import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 
+import { useNavigate } from 'react-router-dom';
+
 const Signup = () => {
+
+    let navigate = useNavigate();
+
     const paperStyle = { padding: 20, width: 300, margin: "0 auto" }
     const headerStyle = { margin: 0 }
     const avatarStyle = { backgroundColor: '#1bbd7e' }
@@ -35,13 +40,18 @@ const Signup = () => {
                         </RadioGroup>
                     </FormControl>
                     <TextField fullWidth label='Phone Number' placeholder="Enter your phone number" />
-                    <TextField fullWidth label='Password' placeholder="Enter your password"/>
-                    <TextField fullWidth label='Confirm Password' placeholder="Confirm your password"/>
+                    <TextField fullWidth label='Password' type='password' placeholder="Enter your password"/>
+                    <TextField fullWidth label='Confirm Password' type='password' placeholder="Confirm your password"/>
                     <FormControlLabel
                         control={<Checkbox name="checkedA" />}
                         label="I accept the terms and conditions."
                     />
-                    <Button type='submit' variant='contained' color='primary'>Sign up</Button>
+                    <Button type='submit' variant='contained' color='primary'
+                        onClick={() => {
+                            navigate("/login");
+                        }} 
+                    >Sign up
+                    </Button>
                 </form>
             </Paper>
         </Grid>
