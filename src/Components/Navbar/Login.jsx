@@ -7,7 +7,11 @@ import Checkbox from '@material-ui/core/Checkbox';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 
+import { useNavigate } from 'react-router-dom';
+
 const Login = ({ handleChange }) => {
+
+    let navigate = useNavigate();
 
     const paperStyle = { padding: 20, width: 300, margin: "0 auto" }
     // const paperStyle = { padding: 20, height: '73vh', width: 300, margin: "0 auto" }
@@ -57,9 +61,20 @@ const Login = ({ handleChange }) => {
                                 }
                                 label="Remember me"
                             />
-                            <Button type='submit' color='primary' variant="contained" disabled={props.isSubmitting}
-                                style={btnstyle} fullWidth>{props.isSubmitting ? "Loading" : "Sign in"}</Button>
+                            {/* <Button type='submit' color='primary' variant="contained" disabled={props.isSubmitting}
+                                style={btnstyle} fullWidth>{props.isSubmitting ? "Loading" : "Sign in"}
 
+                                onClick={() => {
+                                    navigate("/");
+                                }} 
+
+                            </Button> */}
+                            <Button type='submit' color='primary' variant="contained"
+                                onClick={() => {
+                                    navigate("/");
+                                }} 
+                            >   SIGNIN
+                            </Button>
                         </Form>
                     )}
                 </Formik>

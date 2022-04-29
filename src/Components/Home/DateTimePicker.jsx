@@ -17,7 +17,7 @@ function DateTimePicker() {
   const handleDateChange = (event) => {
     console.log(event.target.value);
     setSelectedDate(event.target.value);
-};
+  };
 
 
   return (
