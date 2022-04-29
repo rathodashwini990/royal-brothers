@@ -58,40 +58,62 @@ export default function Navbar() {
             <img src="https://www.kindpng.com/picc/m/600-6000026_royal-brothers-logo-hd-png-download.png" 
               alt="logo" 
               className={classes.logo} 
-
               onClick={() => {
                 navigate("/");
-              }} 
-              
+              }}  
             />
           </Typography>
           <Typography className={classes.title}>
-            Tariff
+            <Button  
+              onClick={() => {
+                navigate("/search");
+              }} 
+                className={classes.btn}> Tariff
+            </Button>
+            {/* Tariff */}
           </Typography>
           <Typography className={classes.title}>
-            What's new?
+            <Button  
+              onClick={() => {
+                navigate("/");
+              }} 
+                className={classes.btn}> What's new?
+            </Button>
+            {/* What's new? */}
           </Typography>
           <Typography className={classes.title}>
-            Careers
+            <Button  
+              onClick={() => {
+                navigate("/");
+              }} 
+                className={classes.btn}> Careers
+            </Button>
+            {/* Careers */}
           </Typography>
           <Typography color="black" className={classes.title}>
-            Partener with us
+            <Button  
+                onClick={() => {
+                navigate("/");
+              }} 
+                className={classes.btn}> Partener with us
+            </Button>
+            {/* Partener with us */}
           </Typography>
-          <Button className={classes.btn1}>Location</Button>
+            <Button className={classes.btn1}>Location</Button>
 
-          <Button  
-              onClick={() => {
-              navigate("/login");
-            }} 
-              className={classes.btn}>Login
-          </Button>
+            <Button  
+                onClick={() => {
+                navigate("/login");
+              }} 
+                className={classes.btn}> Login
+            </Button>
 
-          <Button  
-              onClick={() => {
-              navigate("/login");
-            }} 
-              className={classes.btn}>Signup
-          </Button>
+            <Button  
+                onClick={() => {
+                navigate("/login");
+              }} 
+                className={classes.btn}> Signup
+            </Button>
         </Toolbar>
       </AppBar>
     </div>
