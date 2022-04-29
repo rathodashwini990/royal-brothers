@@ -8,9 +8,17 @@ import FormControl from '@material-ui/core/FormControl';
 import FormLabel from '@material-ui/core/FormLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 
+import { useState } from "react";
+
 import { useNavigate } from 'react-router-dom';
 
 const Signup = () => {
+
+    const [name, setName] = useState();
+    const [email, setEmail] = useState();
+    const [phone, setPhone] = useState();
+    const [password, setPassword] = useState();
+    const [confirm, setConfirmPassword] = useState();
 
     let navigate = useNavigate();
 
@@ -18,6 +26,26 @@ const Signup = () => {
     const headerStyle = { margin: 0 }
     const avatarStyle = { backgroundColor: '#1bbd7e' }
     const marginTop = { marginTop: 5 }
+
+    const registerUser = (data) => {
+
+        fetch("https://royal-brothers-json.herokuapp.com/user",
+          {
+            method: "POST",
+            headers:
+              { "Content-Type": "application/json" },
+                body: JSON.stringify({
+                name: name,
+                email: email,
+                phone: phone,
+                password: password,
+                confirm: confirm,
+            })
+          });
+    
+        alert("login successful");
+        window.location.href = "/login";
+      }
 
     return (
         <Grid>
@@ -30,8 +58,16 @@ const Signup = () => {
                     <Typography variant='caption' gutterBottom>Please fill this form to create an account !</Typography>
                 </Grid>
                 <form>
-                    <TextField fullWidth label='Name' placeholder="Enter your name" />
-                    <TextField fullWidth label='Email' placeholder="Enter your email" />
+                    <TextField fullWidth label='Name' placeholder="Enter your name" 
+                        onChange={(e) => {
+                            setName(e.target.value);
+                        }}
+                    />
+                    <TextField fullWidth label='Email' placeholder="Enter your email" 
+                        onChange={(e) => {
+                            setEmail(e.target.value);
+                        }}
+                    />
                     <FormControl component="fieldset" style={marginTop}>
                         <FormLabel component="legend">Gender</FormLabel>
                         <RadioGroup aria-label="gender" name="gender" style={{ display: 'initial' }}>
@@ -39,14 +75,29 @@ const Signup = () => {
                             <FormControlLabel value="male" control={<Radio />} label="Male" />
                         </RadioGroup>
                     </FormControl>
-                    <TextField fullWidth label='Phone Number' placeholder="Enter your phone number" />
-                    <TextField fullWidth label='Password' type='password' placeholder="Enter your password"/>
-                    <TextField fullWidth label='Confirm Password' type='password' placeholder="Confirm your password"/>
+                    <TextField fullWidth label='Phone Number' placeholder="Enter your phone number" 
+                        onChange={(e) => {
+                            setPhone(e.target.value);
+                        }}
+                    />
+                    <TextField fullWidth label='Password' type='password' placeholder="Enter your password"
+                        onChange={(e) => {
+                            setPassword(e.target.value);
+                        }}
+                    />
+                    <TextField fullWidth label='Confirm Password' type='password' placeholder="Confirm your password"
+                        onChange={(e) => {
+                            setConfirmPassword(e.target.value);
+                        }}
+                    />
                     <FormControlLabel
                         control={<Checkbox name="checkedA" />}
                         label="I accept the terms and conditions."
                     />
-                    <Button type='submit' variant='contained' color='primary'>Sign up</Button>
+                    <Button type='submit' variant='contained' color='primary'
+                        onClick={registerUser}
+                    >Sign up
+                    </Button>
                     {/* <Button type='submit' variant='contained' color='primary'
                         // onClick={() => {
                         //     navigate("/login");
