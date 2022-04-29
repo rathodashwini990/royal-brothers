@@ -163,6 +163,7 @@ const Payment = () => {
                           dispatch(addCart(e)); 
                           if(number.length === 0 || name.length === 0 || 
                              expiry.length === 0 || cvc.length === 0 ){
+                              alert("Please fill all fields")
                               navigate("/checkout")
                           }else{
                             navigate("/success")
