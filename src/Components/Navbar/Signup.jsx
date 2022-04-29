@@ -27,10 +27,17 @@ const Signup = () => {
     const avatarStyle = { backgroundColor: '#1bbd7e' }
     const marginTop = { marginTop: 5 }
 
-    const registerUser = (data) => {
+    
 
-        fetch("https://royal-brothers-json.herokuapp.com/user",
-          {
+    const registerUser = (data) => {
+        if(name.length === 0 || email.length === 0 || 
+           phone.length === 0 || password.length === 0 ||
+           confirm.length === 0){
+
+            alert("Please fill all fields")
+        }else{
+            fetch("https://royal-brothers-json.herokuapp.com/user",
+            {
             method: "POST",
             headers:
               { "Content-Type": "application/json" },
@@ -45,6 +52,8 @@ const Signup = () => {
     
         alert("login successful");
         window.location.href = "/login";
+        }
+        
       }
 
     return (
@@ -58,12 +67,12 @@ const Signup = () => {
                     <Typography variant='caption' gutterBottom>Please fill this form to create an account !</Typography>
                 </Grid>
                 <form>
-                    <TextField fullWidth label='Name' placeholder="Enter your name" 
+                    <TextField fullWidth label='Name' placeholder="Enter your name" required
                         onChange={(e) => {
                             setName(e.target.value);
                         }}
                     />
-                    <TextField fullWidth label='Email' placeholder="Enter your email" 
+                    <TextField fullWidth label='Email' placeholder="Enter your email" required
                         onChange={(e) => {
                             setEmail(e.target.value);
                         }}
@@ -75,17 +84,17 @@ const Signup = () => {
                             <FormControlLabel value="male" control={<Radio />} label="Male" />
                         </RadioGroup>
                     </FormControl>
-                    <TextField fullWidth label='Phone Number' placeholder="Enter your phone number" 
+                    <TextField fullWidth label='Phone Number' placeholder="Enter your phone number" required 
                         onChange={(e) => {
                             setPhone(e.target.value);
                         }}
                     />
-                    <TextField fullWidth label='Password' type='password' placeholder="Enter your password"
+                    <TextField fullWidth label='Password' type='password' placeholder="Enter your password" required
                         onChange={(e) => {
                             setPassword(e.target.value);
                         }}
                     />
-                    <TextField fullWidth label='Confirm Password' type='password' placeholder="Confirm your password"
+                    <TextField fullWidth label='Confirm Password' type='password' placeholder="Confirm your password" required
                         onChange={(e) => {
                             setConfirmPassword(e.target.value);
                         }}

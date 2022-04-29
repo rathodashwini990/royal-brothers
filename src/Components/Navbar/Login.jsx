@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Grid, Paper, Avatar, TextField, Button, Typography, Link } from '@material-ui/core'
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
@@ -10,6 +10,8 @@ import * as Yup from 'yup';
 import { useNavigate } from 'react-router-dom';
 
 const Login = ({ handleChange }) => {
+    const [name, setName] = useState("");
+    const [password, setPassword] = useState("");
 
     let navigate = useNavigate();
 
@@ -71,9 +73,18 @@ const Login = ({ handleChange }) => {
                             </Button> */}
                             <Button type='submit' color='primary' variant="contained" disabled={props.isSubmitting}
                                 style={btnstyle} fullWidth
-                                onClick={() => {
-                                    navigate("/");
-                                }} 
+                                // onClick={() => {
+                                //     navigate("/");
+                                // }} 
+                                onClick={() => 
+                                    {
+                                      if(name.length === 0 || password.length === 0 ){
+                                        navigate("/")
+                                      }else{
+                                        navigate("/login")
+                                      } 
+                                    }
+                                  }
                             >   {props.isSubmitting ? "Loading" : "Sign in"}
                             </Button>
                         </Form>

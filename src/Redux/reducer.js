@@ -13,9 +13,11 @@ const reducer = (state = initState, action) => {
         case STORE_DATA : 
             return {...state, data : action.payload}
 
-            case ADD_CART : 
+        case ADD_CART : 
             console.log(state.cart);
-            return {...state, cart : [...state.cart, action.payload]}
+            //return {...state, cart : [...state.cart, action.payload]}
+            return {...state, cart : [action.payload]}
+
 
         default :
             return state;

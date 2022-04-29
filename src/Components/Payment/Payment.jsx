@@ -105,7 +105,7 @@ const Payment = () => {
                   <Cards 
                     number={number}
                     name={name}
-                    xpiry={expiry}
+                    expiry={expiry}
                     cvc={cvc}
                     focused={focus}
                   />
@@ -118,6 +118,7 @@ const Payment = () => {
                         value={number}
                         onChange={e => setNumber(e.target.value)}
                         onFocus={e => setFocus(e.target.name)}
+                        required
                       />
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       <label>Name: </label> 
@@ -128,6 +129,7 @@ const Payment = () => {
                         value={name}
                         onChange={e => setName(e.target.value)}
                         onFocus={e => setFocus(e.target.name)}
+                        required
                       />
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br /><br />
                       <label>Expiry Date: </label>
@@ -138,6 +140,7 @@ const Payment = () => {
                         value={expiry}
                         onChange={e => setExpiry(e.target.value)}
                         onFocus={e => setFocus(e.target.name)}
+                        required
                       />
                       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                       <label>CVC: </label>
@@ -148,6 +151,7 @@ const Payment = () => {
                         value={cvc}
                         onChange={e => setCvc(e.target.value)}
                         onFocus={e => setFocus(e.target.name)}
+                        required
                       /> <br /><br /><br />
                     </form>
                     </div>
@@ -156,7 +160,14 @@ const Payment = () => {
                       style={{marginLeft: 250}}
                       onClick={() => 
                         {
-                          dispatch(addCart(e)); navigate("/success")
+                          dispatch(addCart(e)); 
+                          if(number.length === 0 || name.length === 0 || 
+                             expiry.length === 0 || cvc.length === 0 ){
+                              navigate("/checkout")
+                          }else{
+                            navigate("/success")
+                          }
+                          
                         }
                       }
                     >Make Payment
