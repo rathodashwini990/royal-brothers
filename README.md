@@ -45,44 +45,29 @@ You are on our Landing page now. you get to see what are things our website prov
 
 
 ### Login and Sign up Page:
-User need to login before purchasing products from “myfitnesspal”. If user's are existing user they can login and if they are not existing user then they can register using sign up.
+User need to login before book a bike from “royal-brothers”. If user's are existing user they can login and if they are not existing user then they can register using sign up.
 
 
 
 ##### login page:
-To login User has to enter their Phone number and password to log into the website.
+To login User has to enter their username and password to log into the website.
 
 <img width="908" alt="fit_login" src="">
 
 
 
 ##### Sign Up page:
-To signup User has to register the by entering their name , email, phone number, password and then the things you want to do like losing or gain weight preferences and click on the "create account" button. You are now succesfully logged In.
-
-Some questions required to be answer during sign up...
+To signup User has to register the by entering their name , email, phone number, password, confirm password and then the things you want to do like book a bike for ride and click on the "signup" button. You are now succesfully logged In.
 
 <img width="908" alt="fit_signup" src="">
 
 <img width="922" alt="fit_signup2" src="">
 
-<img width="910" alt="fit_signup3" src="">
-
-<img width="911" alt="fit_signup4" src="">
-
-<img width="910" alt="fit_signup5" src="">
 
 ### Home page:
 After succesful login you wiil be redirected to home page where you can see the advices to follow.
 
 ![home page](https://drive.google.com/drive/u/0/folders/1TvPwqaoG0Oihle0m0fKlJB7r3PdBXyOG)
-
-### Blog page:
-You can see the blog page by just clicking on the "blog " on the navigation bar. On cliking you can get blogs written by some people who already used this app. click on the articles and see the whole story on the article.
-
-
-<img width="910" alt="fit_blog1" src="">
-
-<img width="910" alt="blog2" src="">
 
 
 
