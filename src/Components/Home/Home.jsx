@@ -17,12 +17,12 @@ export const Home = () => {
         <div className="home-sani-ch">24/7 Roadside Assistance</div>
         <div className="home-sani-ch">Bike Maintenance</div>
       </div>
+      
       <div className="home-sani-div">
         <h1 className="home-sani-h">OUR FLEET</h1>
         <div className="home-sani-line"></div>
       </div>
 
-     
       <div className="home-sani-div">
         <h1 className="home-sani-h">WE BELIEVE IN QUALITY</h1>
         <div className="home-sani-line"></div>

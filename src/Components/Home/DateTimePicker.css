@@ -1,5 +1,12 @@
 .home-img{
-  border: "1px solid black";
+  background-image: url("https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page_web-986bff386c60dfaf5106b17c40f7c04228518a95dff9b04ccd88c81465cec0be.jpg");
+  background-size: cover;
   width: 100%;
-  height: "800px", 
+  height: 700px;
+  padding: 1rem;
 }
+/* backgroundImage: `url("https://d36g7qg6pk2cm7.cloudfront.net/assets/landing_page_web-986bff386c60dfaf5106b17c40f7c04228518a95dff9b04ccd88c81465cec0be.jpg")`,
+      // width: "100%", 
+      height: "700px", 
+      marginTop: "70px", 
+      border: "1px solid black" */
