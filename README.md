@@ -10,7 +10,7 @@
 [Link](https://drive.google.com/file/d/1FocZzeAfGr-OhZdutAP0PsVcsOkKPwaH/view?usp=sharing)
 
 
-# Technology We Used :computer:
+# Technology I Used :computer:
 > Tech Stack in Frontend:
 1. React Js
 2. Javascript
