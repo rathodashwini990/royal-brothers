@@ -37,7 +37,7 @@
 ### Landing Page:
 You are on our Landing page now. you get to see what are things our website provides before signing in. 
 
-<img width="912" alt="fit_landing" src="">
+<img width="912" alt="fit_landing" src="https://drive.google.com/drive/u/0/folders/1TvPwqaoG0Oihle0m0fKlJB7r3PdBXyOG">
 
 
 <img width="908" alt="fit_landing2" src="">
@@ -74,7 +74,7 @@ Some questions required to be answer during sign up...
 ### Home page:
 After succesful login you wiil be redirected to home page where you can see the advices to follow.
 
-![home page]()
+![home page](https://drive.google.com/drive/u/0/folders/1TvPwqaoG0Oihle0m0fKlJB7r3PdBXyOG)
 
 ### Blog page:
 You can see the blog page by just clicking on the "blog " on the navigation bar. On cliking you can get blogs written by some people who already used this app. click on the articles and see the whole story on the article.
