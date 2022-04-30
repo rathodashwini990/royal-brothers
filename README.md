@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Royal-Brothers
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+#### About Royal-Brothers
+> We are a bunch of millennials focused on building India’s largest mobility solutions provider. Our focus has led us to build a platform providing rentals spanning across 14 states, 43 cities and 3 international cities. Transportation and mobility solutions is one of the least understood and most unorganized markets. We see this as an unexplored opportunity to build a system that can be trusted by everyone beyond barriers. We have no limitations when it comes to two wheelers and enjoy serving everything from a scooter to a superbike available on both website and mobile application. We are obsessed with the concept of ‘Why buy when you can rent’.
 
-## Available Scripts
+> In this project I have tried to enhance the cloning of “royal-brothers” website using frontend with React Js, Material UI, redux and JSON data with validations, signup, login and much more. I had build up all the efforts to do best in this project. As, the Masai School's Mentorship  was specifically to build up skills and I also accordingly implemented all that teachings in the project to look it at its best. Completing this project alone was the most crucial part to get successfully completed on time.
 
-In the project directory, you can run:
+# Video link:
+ #### I have shared a demo presentation of this project "royal-brothers".
+[Link](https://drive.google.com/file/d/1FocZzeAfGr-OhZdutAP0PsVcsOkKPwaH/view?usp=sharing)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Technology I Used :computer:
+> Tech Stack in Frontend:
+1. React Js
+2. Javascript
+3. CSS3
+4. HTML
+5. Redux
+6. Material UI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+> Tech Stack in Backend:
+1. Using JSON data(hosted on Heroku platform)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+# Features
+1. You can search your bike rides here.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. You can earn with us and also have store functionality where you can buy a multiple products.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3. Dynamic pages with Routing features and state management.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# Roles and Responsibilities
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Landing Page:
+You are on our Landing page now. you get to see what are things our website provides before signing in. 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img width="912" alt="fit_landing" src="https://drive.google.com/drive/u/0/folders/1TvPwqaoG0Oihle0m0fKlJB7r3PdBXyOG">
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<img width="908" alt="fit_landing2" src="">
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Login and Sign up Page:
+User need to login before book a bike from “royal-brothers”. If user's are existing user they can login and if they are not existing user then they can register using sign up.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+##### login page:
+To login User has to enter their username and password to log into the website.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<img width="908" alt="fit_login" src="">
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+##### Sign Up page:
+To signup User has to register the by entering their name , email, phone number, password, confirm password and then the things you want to do like book a bike for ride and click on the "signup" button. You are now succesfully logged In.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<img width="908" alt="fit_signup" src="">
 
-### Deployment
+<img width="922" alt="fit_signup2" src="">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+### Home page:
+After succesful login you wiil be redirected to home page where you can see the advices to follow.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![home page](https://drive.google.com/drive/u/0/folders/1TvPwqaoG0Oihle0m0fKlJB7r3PdBXyOG)
+
+
+
+# Authors
+
+### Ashwini Rathod 👧:
+>  [Linkedin]( https://www.linkedin.com/in/ashwini-rathod-0a4900228/ ) 
+    
+>  [GitHub](https://github.com/rathodashwini990)
